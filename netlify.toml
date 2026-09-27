@@ -1,0 +1,29 @@
+# The Ledger is its own Netlify site.
+#
+# Without this file the CLI walks up to /Users/rbob/Desktop/spnat/netlify.toml,
+# which publishes that whole folder as the nomadika-masquerave site. Having a
+# config here stops the parent one being picked up and pins the publish
+# directory to this folder.
+#
+# The site LINK still comes from .netlify/state.json, and the nearest one wins,
+# so this folder must be linked to its own site (netlify sites:create run from
+# here) or every deploy must pass --site explicitly.
+
+[build]
+  publish = "."
+  command = ""
+
+[build.processing]
+  skip_processing = true
+
+# Cache-bust query strings already handle the versioned css and js, so the
+# HTML itself must never be held in a cache.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

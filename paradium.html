@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Odysseon Capital · The Paradium Trade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1790010000">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <div class="sweep" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="topbar__mark topbar__back" href="index.html">&#8592;&nbsp;&nbsp;The Ledger</a>
+    <span class="topbar__meta">Portfolio Report</span>
+  </header>
+
+  <div class="railbar">
+    <a class="railbar__back" href="index.html">&#8592;&nbsp;&nbsp;The Ledger</a>
+    <span>The Paradium Trade</span>
+  </div>
+
+  <main class="hero">
+
+    <div class="logo-wrap">
+      <div class="logo-pill" aria-hidden="true">
+        <div class="logo-pill__layer" data-layer="a">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+        <div class="logo-pill__layer" data-layer="b">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+      </div>
+      <img class="logo" src="assets/odysseon-logo-light.png" alt="Odysseon Capital">
+    </div>
+
+    <div class="title-block">
+      <div class="rule"></div>
+      <h1 class="company">The Paradium Trade</h1>
+      <p class="subtitle">Our Execution &amp; Outcome</p>
+    </div>
+
+    <nav class="actions">
+      <a class="btn btn--solid" href="#introduction" data-enter>Read the Report</a>
+    </nav>
+
+  </main>
+
+  <article class="report" id="introduction">
+
+    <!-- ============ 01 ============ -->
+    <section class="section">
+
+      <header class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Introduction</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">The Position</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            Paradium.AI trades on NYSE American as PAAI. Until 31 August 2026 the same company
+            traded as The Arena Group under AREN. The desk bought it in the first week of
+            September and sold the whole position on 18 September.
+          </p>
+
+          <div class="plan">
+            <p class="plan__label reveal">Our Logic</p>
+
+            <p class="reveal">
+              Through mid August the stock carried real volume off the rebrand from The Arena
+              Group to Paradium.AI. The move faded and the price came back to ninety cents, where
+              the downside was close to spent.
+            </p>
+
+            <p class="reveal">
+              In front of that floor sat a calendar: the Elcano partnership pushing brand IP
+              across programmatic channels, and the Lake Street BIG10 Conference in New York.
+            </p>
+
+            <p class="reveal">
+              The catalyst that paid was larger. On 17 September Paradium signed a ten year
+              platform agreement with Roundtable worth roughly one billion dollars, near one
+              hundred million a year, against a company the market valued at about fifty million.
+              Ten years of billing at twenty times the whole company. Roundtable would take 49.5%
+              of the stock and pay $3.80 a share for it. We had paid ninety six cents.
+            </p>
+          </div>
+
+          <div class="marks">
+            <div class="mark mark--ours reveal">
+              <p class="mark__k">Average entry</p>
+              <p class="mark__v">$0.9621</p>
+              <p class="mark__n">Two buys, 1 and 8 September 2026</p>
+            </div>
+            <div class="mark reveal" data-delay="90">
+              <p class="mark__k">Capital committed</p>
+              <p class="mark__v">$6,300</p>
+              <p class="mark__n">6,548.01 shares</p>
+            </div>
+            <div class="mark mark--ours reveal" data-delay="180">
+              <p class="mark__k">Exit</p>
+              <p class="mark__v">$2.8688</p>
+              <p class="mark__n">Whole position, 18 September 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 02 ============ -->
+    <section class="section" id="chart">
+
+      <header class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">The Chart</h2>
+      </header>
+
+      <div class="pa reveal">
+        <div class="pa__head">
+          <span class="pa__title">Paradium.AI &nbsp;&middot;&nbsp; NYSE American: PAAI</span>
+          <span class="pa__date" data-pa="date"></span>
+        </div>
+
+        <div class="pa__read">
+          <div class="pa-cell"><p class="pa-cell__k">Open</p><p class="pa-cell__v" data-pa="o"></p></div>
+          <div class="pa-cell"><p class="pa-cell__k">High</p><p class="pa-cell__v" data-pa="h"></p></div>
+          <div class="pa-cell"><p class="pa-cell__k">Low</p><p class="pa-cell__v" data-pa="l"></p></div>
+          <div class="pa-cell"><p class="pa-cell__k">Close</p><p class="pa-cell__v" data-pa="c"></p></div>
+          <div class="pa-cell"><p class="pa-cell__k">Volume</p><p class="pa-cell__v" data-pa="v"></p></div>
+        </div>
+
+        <div class="pa__chart">
+          <svg id="pa-svg" role="img"
+               aria-label="PAAI Heikin-Ashi candles, August to September 2026, with the desk's two entries and its exit marked"></svg>
+        </div>
+
+        <div class="pa__key">
+          <span class="pa-key"><i class="up"></i>Up candle</span>
+          <span class="pa-key"><i class="dn"></i>Down candle</span>
+          <span class="pa-key"><i class="mk"></i>Our fills</span>
+          <span class="pa-key">Dashed gold: average entry and exit</span>
+          <span class="pa-key">Lower panel: volume</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 03 ============ -->
+    <section class="section" id="execution">
+
+      <header class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">The Execution</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Every Fill</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            Three fills, no more. The position was opened in two pieces and closed in one, and it
+            closed flat to the share.
+          </p>
+        </div>
+      </div>
+
+      <div class="fills reveal">
+        <div class="fills__row fills__row--head">
+          <span>Side</span><span>Date</span><span>Note</span>
+          <span>Quantity</span><span>Price</span><span>Cash</span>
+        </div>
+
+        <div class="fills__row fills__row--buy">
+          <span class="fills__side">Buy</span>
+          <span class="fills__num">1 Sep 2026</span>
+          <span class="fills__note">First tranche, into the base</span>
+          <span class="fills__num">4,358.483</span>
+          <span class="fills__num">$0.9177505</span>
+          <span class="fills__num">&minus;$4,000.00</span>
+        </div>
+
+        <div class="fills__row fills__row--buy">
+          <span class="fills__side">Buy</span>
+          <span class="fills__num">8 Sep 2026</span>
+          <span class="fills__note">Added ahead of the BIG10 conference</span>
+          <span class="fills__num">2,189.532</span>
+          <span class="fills__num">$1.0504528</span>
+          <span class="fills__num">&minus;$2,300.00</span>
+        </div>
+
+        <div class="fills__row fills__row--sell">
+          <span class="fills__side">Sell</span>
+          <span class="fills__num">18 Sep 2026</span>
+          <span class="fills__note">Whole position, the morning after the Roundtable agreement</span>
+          <span class="fills__num">6,548.015</span>
+          <span class="fills__num fills__num--gold">$2.8687655</span>
+          <span class="fills__num fills__num--gold">+$18,784.72</span>
+        </div>
+
+        <div class="fills__row fills__row--total">
+          <span class="fills__side">Net</span>
+          <span class="fills__num">17 days</span>
+          <span class="fills__note">Position closed flat, nothing carried</span>
+          <span class="fills__num">0.000</span>
+          <span class="fills__num">&nbsp;</span>
+          <span class="fills__num fills__num--gold">+$12,484.72</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 04 ============ -->
+    <section class="section" id="catalysts">
+
+      <header class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Time Line</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">What Moved It</div>
+
+        <div>
+          <p class="tl-note reveal">
+            PAAI from the start of August 2026 to the last close before this report. Every marked
+            session is one that moved the stock materially, up or down, and the two entries and
+            the exit are marked where they happened. Press any of them, on the chart or in the
+            index beneath it, to watch the move draw itself and read what it did to the price.
+          </p>
+
+          <div class="tl-chart reveal">
+            <svg id="tl-overview" role="img"
+                 aria-label="PAAI daily closing price, August to September 2026, with marked events"></svg>
+          </div>
+
+          <div id="tl-index" class="reveal"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 05 ============ -->
+    <section class="section" id="concluding">
+
+      <header class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Concluding The Trade</h2>
+      </header>
+
+      <div class="marks marks--4 reveal" style="max-width:1180px;margin-left:auto;margin-right:auto;">
+        <div class="mark">
+          <p class="mark__k">Capital committed</p>
+          <p class="mark__v">$6,300</p>
+          <p class="mark__n">Across two buys</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Proceeds</p>
+          <p class="mark__v">$18,784.72</p>
+          <p class="mark__n">One sell, position flat</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Realised gain</p>
+          <p class="mark__v">$12,484.72</p>
+          <p class="mark__n">Booked 18 September 2026</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Principal growth</p>
+          <p class="mark__v">298.2%</p>
+          <p class="mark__n">2.98x on the money</p>
+        </div>
+      </div>
+
+      <div class="marks marks--4 reveal" data-delay="90" style="max-width:1180px;margin-left:auto;margin-right:auto;margin-top:1px;">
+        <div class="mark">
+          <p class="mark__k">Return on cost</p>
+          <p class="mark__v">+198.17%</p>
+          <p class="mark__n">Gain over capital committed</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Shares</p>
+          <p class="mark__v">6,548.01</p>
+          <p class="mark__n">Bought and sold, flat to the share</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Held</p>
+          <p class="mark__v mark__v--range">17 days</p>
+          <p class="mark__n">13 trading sessions</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Worst mark</p>
+          <p class="mark__v mark__v--range">&minus;$603</p>
+          <p class="mark__n">&minus;9.6% on 15 Sep, at $0.87</p>
+        </div>
+      </div>
+
+      <div class="marks marks--4 reveal" data-delay="180" style="max-width:1180px;margin-left:auto;margin-right:auto;margin-top:1px;">
+        <div class="mark">
+          <p class="mark__k">Peak print in the trade</p>
+          <p class="mark__v mark__v--range">$3.47</p>
+          <p class="mark__n">17 September, intraday</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Capture of the peak</p>
+          <p class="mark__v">82.7%</p>
+          <p class="mark__n">Exit against the highest print</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Exit over that day's close</p>
+          <p class="mark__v">+91.3%</p>
+          <p class="mark__n">Sold at $2.87, closed at $1.50</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Exit over the last close</p>
+          <p class="mark__v">+118.2%</p>
+          <p class="mark__n">Against $1.315 on 21 Sep</p>
+        </div>
+      </div>
+
+    </section>
+
+  </article>
+
+
+  <div class="cu" id="tl-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cu-title">
+    <div class="cu__scrim"></div>
+    <div class="cu__panel">
+      <button class="cu__close" type="button" aria-label="Close">&#10005;</button>
+      <p class="cu__date" data-m="date"></p>
+      <h3 class="cu__title" id="cu-title" data-m="title"></h3>
+
+      <svg class="cu__chart" data-m="chart" role="img" aria-label="Price movement around the event"></svg>
+
+      <div class="cu__figures">
+        <div class="cu-figure">
+          <p class="cu-figure__k" data-m="pctkey">Change on the day</p>
+          <p class="cu-figure__v" data-m="pct"></p>
+        </div>
+        <div class="cu-figure">
+          <p class="cu-figure__k" data-m="pxkey">New price</p>
+          <p class="cu-figure__v" data-m="px"></p>
+        </div>
+        <div class="cu-figure">
+          <p class="cu-figure__k" data-m="volkey">Volume</p>
+          <p class="cu-figure__v" data-m="vol"></p>
+        </div>
+      </div>
+
+      <p class="cu__body" data-m="body"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Odysseon Holdings Limited</span>
+    <span>September 2026</span>
+  </footer>
+
+  <script src="paai.js?v=1790010000"></script>
+  <script src="paai-chart.js?v=1790010000"></script>
+  <script src="paai-events.js?v=1790012000"></script>
+  <script src="timeline.js?v=1790012000"></script>
+  <script src="pill.js?v=1790010000"></script>
+  <script src="app.js?v=1790010000"></script>
+</body>
+</html>

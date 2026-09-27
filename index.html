@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Odysseon Capital · The Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1790006532">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <div class="sweep" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <span class="topbar__mark">Odysseon Capital</span>
+    <span class="topbar__meta">The Ledger</span>
+  </header>
+
+  <div class="railbar" aria-hidden="true">
+    <span>Odysseon Capital</span>
+    <span>The Ledger</span>
+  </div>
+
+  <main class="hero">
+
+    <div class="logo-wrap">
+      <!-- b-roll sits behind the wordmark and shows through the pill's counter,
+           which is the one fully enclosed opening in the mark -->
+      <div class="logo-pill is-live" id="logo-pill" role="button" tabindex="0"
+           aria-label="Open the positions">
+        <div class="logo-pill__layer" data-layer="a">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+        <div class="logo-pill__layer" data-layer="b">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+      </div>
+      <img class="logo" src="assets/odysseon-logo-light.png" alt="Odysseon Capital">
+
+      <!-- dispensed by the pill above, and landing right under the wordmark -->
+      <div class="eject" id="eject">
+        <a class="eject__pill" href="iovance.html">The Iovance Trade</a>
+        <a class="eject__pill" href="paradium.html">The Paradium Trade</a>
+      </div>
+    </div>
+
+  </main>
+
+  <article class="report" id="ledger">
+    <section class="section">
+
+      <header class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">The Ledger</h2>
+      </header>
+
+      <div class="marks marks--4 reveal" style="max-width:1180px;margin-left:auto;margin-right:auto;">
+        <div class="mark">
+          <p class="mark__k">Positions closed</p>
+          <p class="mark__v">2</p>
+          <p class="mark__n">To date</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Principal committed</p>
+          <p class="mark__v">$56,707</p>
+          <p class="mark__n">Across the book</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Realised gain</p>
+          <p class="mark__v">$110,784</p>
+          <p class="mark__n">Booked</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Win rate</p>
+          <p class="mark__v">2 / 2</p>
+          <p class="mark__n">Closed at a profit</p>
+        </div>
+      </div>
+
+      <div class="hof reveal">
+
+        <a class="hof__row" href="iovance.html">
+          <span class="hof__n">01</span>
+
+          <span class="hof__name">
+            <span class="hof__title">Iovance Biotherapeutics</span>
+            <span class="hof__sub">Nasdaq: IOVA &nbsp;·&nbsp; Cell therapy, oncology</span>
+          </span>
+
+          <span class="hof__fig">
+            <span class="hof__k">Entry</span>
+            <span class="hof__v">$3.50</span>
+          </span>
+
+          <span class="hof__fig">
+            <span class="hof__k">Exit, averaged</span>
+            <span class="hof__v">$8.83</span>
+          </span>
+
+          <span class="hof__fig hof__fig--ours">
+            <span class="hof__k">Return</span>
+            <span class="hof__v">+195.01%</span>
+          </span>
+
+          <span class="hof__period">
+            <span class="hof__k">Held</span>
+            <span class="hof__v hof__v--sm">Mar &ndash; Aug 2026</span>
+          </span>
+
+          <span class="hof__go" aria-hidden="true">&#8594;</span>
+        </a>
+
+        <a class="hof__row" href="paradium.html">
+          <span class="hof__n">02</span>
+
+          <span class="hof__name">
+            <span class="hof__title">Paradium.AI</span>
+            <span class="hof__sub">NYSE American: PAAI &nbsp;&middot;&nbsp; AI, media and data</span>
+          </span>
+
+          <span class="hof__fig">
+            <span class="hof__k">Entry, averaged</span>
+            <span class="hof__v">$0.96</span>
+          </span>
+
+          <span class="hof__fig">
+            <span class="hof__k">Exit</span>
+            <span class="hof__v">$2.87</span>
+          </span>
+
+          <span class="hof__fig hof__fig--ours">
+            <span class="hof__k">Return</span>
+            <span class="hof__v">+198.17%</span>
+          </span>
+
+          <span class="hof__period">
+            <span class="hof__k">Held</span>
+            <span class="hof__v hof__v--sm">1 &ndash; 18 Sep 2026</span>
+          </span>
+
+          <span class="hof__go" aria-hidden="true">&#8594;</span>
+        </a>
+
+      </div>
+
+    </section>
+  </article>
+
+  <footer class="footer">
+    <span>Odysseon Holdings Limited</span>
+    <span>September 2026</span>
+  </footer>
+
+  <script src="ledger.js?v=1790006532"></script>
+  <script src="pill.js?v=1790006532"></script>
+  <script src="app.js?v=1790006532"></script>
+</body>
+</html>
