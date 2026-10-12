@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Odysseon Capital · The Algorithm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1790020000">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <div class="sweep" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="topbar__mark" href="index.html">Odysseon Capital</a>
+    <nav class="tabs">
+      <a class="tabs__t" href="index.html">The Ledger</a>
+      <a class="tabs__t is-here" href="algorithm.html">The Algorithm</a>
+      <a class="tabs__t" href="why-us.html">Why Us</a>
+      <a class="tabs__t" href="allocate.html">Allocate</a>
+      <a class="tabs__t" href="socials.html">Socials</a>
+    </nav>
+    <span class="topbar__meta">The Product</span>
+  </header>
+
+  <div class="railbar">
+    <a class="railbar__back" href="index.html">&#8592;&nbsp;&nbsp;The Ledger</a>
+    <span>The Algorithm</span>
+  </div>
+
+  <main class="hero">
+
+    <div class="logo-wrap">
+      <div class="logo-pill" aria-hidden="true">
+        <div class="logo-pill__layer" data-layer="a">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+        <div class="logo-pill__layer" data-layer="b">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+      </div>
+      <img class="logo" src="assets/odysseon-logo-light.png" alt="Odysseon Capital">
+    </div>
+
+    <div class="title-block">
+      <div class="rule"></div>
+      <h1 class="company">The Algorithm</h1>
+      <p class="subtitle">Squeeze Breakout V2</p>
+    </div>
+
+    <nav class="actions">
+      <a class="btn btn--solid" href="#product" data-enter>See How It Works</a>
+    </nav>
+
+  </main>
+
+  <article class="report" id="product">
+
+    <!-- ============ 01 ============ -->
+    <section class="section">
+
+      <header class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">The Product</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">What It Is</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            Squeeze Breakout V2 is a systematic momentum strategy. It is the engine behind the
+            mandates Odysseon runs, and it is the reason a client allocates to us rather than
+            picking names themselves.
+          </p>
+
+          <p class="reveal">
+            The function is deliberately simple. It reads a name across multiple timeframes at
+            once and waits for volatility to compress. A stretch of sideways movement and quiet is
+            usually a coil, not an ending. When that compression shows up on both the short and
+            long views simultaneously, and trend and momentum agree on direction, the algorithm
+            takes the position and defines the exit before it is in it.
+          </p>
+
+          <p class="reveal">
+            Nothing in that sequence requires an opinion. The entry is a condition, the size is a
+            rule, and the exit is written at the same moment as the entry. That is the whole point:
+            the strategy does not get to change its mind halfway through a position, and neither
+            do we.
+          </p>
+        </div>
+      </div>
+
+      <div class="marks marks--4 reveal" style="max-width:1180px;margin-left:auto;margin-right:auto;">
+        <div class="mark">
+          <p class="mark__k">Style</p>
+          <p class="mark__v mark__v--range">Momentum</p>
+          <p class="mark__n">Volatility compression breakout</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Instruments</p>
+          <p class="mark__v mark__v--range">Equities</p>
+          <p class="mark__n">Spot, with a selective option overlay</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Decision basis</p>
+          <p class="mark__v mark__v--range">Rules</p>
+          <p class="mark__n">Entry, size and exit defined in advance</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Holding period</p>
+          <p class="mark__v mark__v--range">Days</p>
+          <p class="mark__n">To a few weeks</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 02 ============ -->
+    <section class="section" id="signal">
+
+      <header class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">The Signal</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Pre-Trade</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            What follows is the sequence the algorithm runs before any position is opened. It
+            loops, so you can watch it as many times as you need.
+          </p>
+
+          <p class="reveal">
+            It scans the universe, isolates the names where volatility has compressed on more than
+            one timeframe, confirms that trend and momentum point the same way, checks the position
+            against the risk budget, and only then writes the order. The exit sits in the order
+            ticket alongside the entry. If any one of those checks fails, nothing is sent.
+          </p>
+        </div>
+      </div>
+
+      <div class="seq reveal">
+        <div class="seq__head">
+          <span class="seq__title">Pre-trade sequence</span>
+          <span class="seq__meta">Illustrative &middot; no position implied</span>
+        </div>
+        <div id="seq-stage"></div>
+      </div>
+
+    </section>
+
+    <!-- ============ 03 ============ -->
+    <section class="section" id="backtest">
+
+      <header class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">The Backtest</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">2025</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            Run over the 2025 calendar year, the strategy returned 65.39 per cent against 15.71 per
+            cent for holding the S&amp;P over the same period, across 2,049 trades and a maximum
+            equity drawdown of 2.63 per cent. Move across the chart to read any point in that year.
+          </p>
+        </div>
+      </div>
+
+      <div class="bench reveal">
+        <div class="bench__head bench__head--plain">
+          <span class="bench__title">Squeeze Breakout V2, backtested</span>
+          <span class="bench__date" data-a="date">1 January to 29 December 2025</span>
+        </div>
+
+        <div class="bench__chart">
+          <svg id="algo-svg" role="img"
+               aria-label="Backtested equity curve for the Odysseon algorithm against the S&amp;P 500, 2025"></svg>
+        </div>
+
+        <div class="bench__legend" id="algo-legend"></div>
+
+        <div class="bench__stats">
+          <div class="bstat"><p class="bstat__k">Total trades</p><p class="bstat__v">2,049</p></div>
+          <div class="bstat"><p class="bstat__k">Profitable</p><p class="bstat__v">36.99%</p></div>
+          <div class="bstat"><p class="bstat__k">Profit factor</p><p class="bstat__v">1.681</p></div>
+          <div class="bstat"><p class="bstat__k">Max drawdown</p><p class="bstat__v">2.63%</p></div>
+        </div>
+      </div>
+
+      <p class="caveat reveal">
+        These figures are backtested, not live. A backtest is run with the benefit of knowing which
+        data existed, and it does not pay slippage, borrow or the cost of being unable to fill at
+        the price on the screen. It is evidence that the rules have an edge over a full year and a
+        large number of trades; it is not a record of money made. Note also that only 36.99 per
+        cent of those trades were profitable. The strategy works because the winners are larger
+        than the losers, not because it is right more often than it is wrong.
+      </p>
+
+      <div class="marks marks--4 reveal" style="max-width:1180px;margin-left:auto;margin-right:auto;margin-top:clamp(26px,4vh,40px);">
+        <div class="mark">
+          <p class="mark__k">Per $100,000</p>
+          <p class="mark__v">$115,710</p>
+          <p class="mark__n">Held in the S&amp;P, at 15.71 per cent</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Per $100,000</p>
+          <p class="mark__v">$165,390</p>
+          <p class="mark__n">On the backtest, at 65.39 per cent</p>
+        </div>
+        <div class="mark mark--ours">
+          <p class="mark__k">Realistic scenario</p>
+          <p class="mark__v">$135,000</p>
+          <p class="mark__n">At 35 per cent, the figure we plan against</p>
+        </div>
+        <div class="mark">
+          <p class="mark__k">Worst equity drawdown</p>
+          <p class="mark__v mark__v--range">&minus;2.63%</p>
+          <p class="mark__n">Peak to trough, across the year</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 04 ============ -->
+    <section class="section" id="overlay">
+
+      <header class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">The Overlay</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Where We Add Risk</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            The default plan trades spot. To extend the gains, and the risk, the trading team hand
+            picks the strongest of those spot signals and takes the position as an option instead.
+          </p>
+
+          <p class="reveal">
+            This is the only discretionary step in the process, and it is a step about expression,
+            not about direction. The algorithm decides what to buy and when to leave. The team
+            decides, on a small number of the highest conviction signals, whether to express that
+            same decision with leverage. The two trades in the Ledger were both taken this way.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 05 ============ -->
+    <section class="section" id="service">
+
+      <header class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 class="section__title">The Service</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">How Clients Access It</div>
+
+        <div class="prose">
+          <p class="lead reveal">
+            Odysseon runs the strategy as a managed mandate. The client allocates, we trade it, and
+            the client sees the same positions and the same marks we do.
+          </p>
+
+          <p class="reveal">
+            Capital is not pooled into a product the client cannot see through. Reporting is the
+            same format as the Ledger on this site: every closed position written up with the
+            entries, the exit, the figures and the reasoning, published when the money is booked
+            rather than at the end of a quarter.
+          </p>
+        </div>
+      </div>
+
+      <div class="tbl reveal">
+        <table>
+          <thead>
+            <tr><th>Term</th><th>Our position</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Structure</td><td>Managed mandate. The client allocates to a strategy, not to a blind pool.</td></tr>
+            <tr><td>Strategy</td><td>Squeeze Breakout V2, spot, with a discretionary option overlay on the highest conviction signals.</td></tr>
+            <tr><td>Reporting</td><td>Per position, published at the point the position closes, with the full execution record.</td></tr>
+            <tr><td>Management fee</td><td class="is-ours">1 per cent a year on assets under management.</td></tr>
+            <tr><td>Performance fee</td><td class="is-ours">12 per cent of the gain.</td></tr>
+            <tr><td>Hurdle</td><td class="is-ours">12 per cent. The performance fee applies only to the return earned above it. Below the hurdle we are paid the management fee and nothing else.</td></tr>
+            <tr><td>Minimum allocation</td><td class="is-tbc">To confirm</td></tr>
+            <tr><td>Regulatory status</td><td class="is-tbc">To confirm. ADGM sets the investor thresholds this would sit against: $50,000 for a Public Fund, $500,000 for an Exempt Fund and $5,000,000 for a Qualified Investor Fund.</td></tr>
+          </tbody>
+        </table>
+        <p class="tbl__note">
+          Thresholds per the ADGM Financial Services Regulatory Authority funds framework. On a
+          year that returns 35 per cent, the realistic scenario, the all-in cost on $100,000 is
+          $1,000 of management fee plus 12 per cent of the 23 points above the hurdle, roughly
+          $2,760, for a total near 3.8 per cent. On a year that returns 10 per cent we are paid
+          $1,000 and no more.
+        </p>
+      </div>
+
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <span>Odysseon Holdings Limited</span>
+    <span>September 2026</span>
+  </footer>
+
+  <script src="timeline.config.js?v=1790020000"></script>
+  <script src="content.config.js?v=1790020000"></script>
+  <script src="sequence.js?v=1790020000"></script>
+  <script src="algo.js?v=1790020000"></script>
+  <script src="algo-chart.js?v=1790020000"></script>
+  <script src="pill.js?v=1790020000"></script>
+  <script src="app.js?v=1790020000"></script>
+</body>
+</html>

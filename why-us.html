@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Odysseon Capital · Why Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1790040000">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <div class="sweep" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="topbar__mark" href="index.html">Odysseon Capital</a>
+    <nav class="tabs">
+      <a class="tabs__t" href="index.html">The Ledger</a>
+      <a class="tabs__t" href="algorithm.html">The Algorithm</a>
+      <a class="tabs__t is-here" href="why-us.html">Why Us</a>
+      <a class="tabs__t" href="allocate.html">Allocate</a>
+      <a class="tabs__t" href="socials.html">Socials</a>
+    </nav>
+    <span class="topbar__meta">The Case</span>
+  </header>
+
+  <div class="railbar">
+    <a class="railbar__back" href="index.html">&#8592;&nbsp;&nbsp;The Ledger</a>
+    <span>Why Us</span>
+  </div>
+
+  <main class="hero">
+
+    <div class="logo-wrap">
+      <div class="logo-pill" aria-hidden="true">
+        <div class="logo-pill__layer" data-layer="a">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+        <div class="logo-pill__layer" data-layer="b">
+          <video class="logo-pill__bg" muted playsinline loop preload="auto"></video>
+          <video class="logo-pill__fg" muted playsinline loop preload="auto"></video>
+        </div>
+      </div>
+      <img class="logo" src="assets/odysseon-logo-light.png" alt="Odysseon Capital">
+    </div>
+
+    <div class="title-block">
+      <div class="rule"></div>
+      <h1 class="company">Why Us</h1>
+      <p class="subtitle">Measured Against The Alternatives</p>
+    </div>
+
+    <nav class="actions">
+      <a class="btn btn--solid" href="#case" data-enter>See The Case</a>
+    </nav>
+
+  </main>
+
+  <article class="report" id="case">
+
+    <!-- ============ 01 ============ -->
+    <section class="section">
+
+      <header class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">The Case</h2>
+      </header>
+
+      <div class="claim reveal">
+        <div class="claim__c">
+          <p class="claim__v">100%</p>
+          <p class="claim__t">Of closed positions published</p>
+          <p class="claim__b">Entries, exit, figures and reasoning, written at the moment the money is booked.</p>
+        </div>
+        <div class="claim__c">
+          <p class="claim__v">12%</p>
+          <p class="claim__t">Hurdle before we earn</p>
+          <p class="claim__b">Below it you pay the management fee and nothing else. A bad year costs you one per cent.</p>
+        </div>
+        <div class="claim__c">
+          <p class="claim__v">0</p>
+          <p class="claim__t">Discretionary entries</p>
+          <p class="claim__b">The entry is a condition, the size is a rule, and the exit is written before we are in it.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 02 ============ -->
+    <section class="section" id="versus">
+
+      <header class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Head To Head</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Pick An Alternative</div>
+        <div class="prose">
+          <p class="lead reveal">
+            Choose what you would otherwise do with the money.
+          </p>
+        </div>
+      </div>
+
+      <div class="vs reveal" id="vs">
+        <div class="vs__chips"></div>
+
+        <div class="vs__head">
+          <div class="vs__side vs__side--l">
+            <p class="vs__name">Odysseon</p>
+            <p class="vs__note">One systematic strategy, published in full</p>
+          </div>
+          <div class="vs__tally" data-vs="tally"></div>
+          <div class="vs__side vs__side--r">
+            <p class="vs__name" data-vs="name"></p>
+            <p class="vs__note" data-vs="note"></p>
+          </div>
+        </div>
+
+        <div class="vs__rows"></div>
+      </div>
+
+    </section>
+
+    <!-- ============ 03 ============ -->
+    <section class="section" id="scorecard">
+
+      <header class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">The Scorecard</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Move The Weight</div>
+        <div class="prose">
+          <p class="lead reveal">
+            Six factors, scored one to five. You decide how much track record matters.
+          </p>
+        </div>
+      </div>
+
+      <div class="score reveal" id="score">
+        <div class="score__ctl">
+          <span class="score__l">Weight on track record</span>
+          <span class="score__v" data-s="w">30%</span>
+        </div>
+        <input class="score__range" type="range" min="0" max="45" step="5" value="30"
+               aria-label="Weight placed on track record">
+
+        <div data-s="bars"></div>
+
+        <p class="score__read" data-s="read"></p>
+      </div>
+
+    </section>
+
+    <!-- ============ 04 ============ -->
+    <section class="section" id="position">
+
+      <header class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Where We Sit</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="rail reveal">Hover A Point</div>
+        <div class="prose">
+          <p class="lead reveal">
+            What you pay, against how much return the offering is willing to aim at.
+          </p>
+        </div>
+      </div>
+
+      <div class="posmap reveal">
+        <svg id="pos-svg" viewBox="0 0 1000 560" role="img"
+             aria-label="Positioning map of Odysseon against private banks, Sarwa and self-directed investing">
+
+          <line class="pos-grid" x1="495" y1="60" x2="495" y2="460"></line>
+          <line class="pos-grid" x1="90" y1="260" x2="900" y2="260"></line>
+          <line class="pos-axis" x1="90" y1="460" x2="900" y2="460"></line>
+          <line class="pos-axis" x1="90" y1="60"  x2="90"  y2="460"></line>
+
+          <text class="pos-lab" x="90"  y="500">Lower fee</text>
+          <text class="pos-lab" x="900" y="500" text-anchor="end">Higher fee</text>
+          <text class="pos-lab" x="78"  y="60"  text-anchor="end" transform="rotate(-90 78 60)">Higher return ambition</text>
+          <text class="pos-lab" x="78"  y="460" text-anchor="end" transform="rotate(-90 78 460)">Market return</text>
+
+          <g class="pos-node" tabindex="0" data-x="155" data-y="260"
+             data-name="Doing it yourself" data-note="No fee, no process, no record">
+            <circle class="pos-hit" cx="155" cy="260" r="26"></circle>
+            <circle class="pos-dot" cx="155" cy="260" r="6"></circle>
+            <text class="pos-name" x="172" y="264">Doing it yourself</text>
+          </g>
+
+          <g class="pos-node" tabindex="0" data-x="292" data-y="372"
+             data-name="Sarwa" data-note="0.40 to 0.85 per cent, passive by design">
+            <circle class="pos-hit" cx="292" cy="372" r="26"></circle>
+            <circle class="pos-dot" cx="292" cy="372" r="6"></circle>
+            <text class="pos-name" x="309" y="376">Sarwa</text>
+          </g>
+
+          <g class="pos-node" tabindex="0" data-x="738" data-y="300"
+             data-name="Private bank" data-note="Negotiated fee, quarterly statement">
+            <circle class="pos-hit" cx="738" cy="300" r="26"></circle>
+            <circle class="pos-dot" cx="738" cy="300" r="6"></circle>
+            <text class="pos-name" x="755" y="304">Private bank</text>
+          </g>
+
+          <g class="pos-node" tabindex="0" data-x="657" data-y="116"
+             data-name="Odysseon" data-note="1 per cent, plus 12 above a 12 per cent hurdle">
+            <circle class="pos-hit" cx="657" cy="116" r="30"></circle>
+            <circle class="pos-dot pos-dot--ours" cx="657" cy="116" r="8"></circle>
+            <text class="pos-name pos-name--ours" x="677" y="120">Odysseon</text>
+          </g>
+
+          <g class="pos-card">
+            <rect x="0" y="0" width="250" height="62" rx="2"></rect>
+            <text class="pos-card__k" x="16" y="25"></text>
+            <text class="pos-card__v" x="16" y="45"></text>
+          </g>
+
+        </svg>
+      </div>
+
+      <p class="caveat reveal">
+        The top right quadrant is empty in this market. That is the whole opportunity, and the
+        hurdle is what makes sitting there defensible: it is the only position on this board where
+        a year that does not work costs the client almost nothing.
+      </p>
+
+    </section>
+
+    <!-- ============ 05 ============ -->
+    <section class="section" id="honest">
+
+      <header class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Honest About It</h2>
+      </header>
+
+      <div class="swot reveal">
+        <div class="swot__q swot__q--s">
+          <p class="swot__k">Strengths</p>
+          <ul>
+            <li>The exit is written before the entry, which removes the failure mode that costs self-directed investors the most.</li>
+            <li>Per-position published reporting that no regional competitor offers.</li>
+            <li>A full 2025 backtest across 2,049 trades with a 2.63 per cent maximum drawdown.</li>
+            <li>Two closed positions, both profitable, both documented to the fill.</li>
+          </ul>
+        </div>
+        <div class="swot__q">
+          <p class="swot__k">Weaknesses</p>
+          <ul>
+            <li>Two closed positions is not a track record by any institutional standard.</li>
+            <li>One strategy, so a regime without volatility compression suppresses the whole book.</li>
+            <li>No distribution and no referral network.</li>
+            <li>The option overlay carries far more variance than the spot strategy beneath it.</li>
+          </ul>
+        </div>
+        <div class="swot__q swot__q--o">
+          <p class="swot__k">Opportunities</p>
+          <ul>
+            <li>Nobody in the regional set treats transparency as the product rather than an obligation.</li>
+            <li>ADGM has lowered the practical cost of being a licensed manager, and over 110 now operate there.</li>
+            <li>Investors who shopped for a manager and stayed put are the warmest segment, and nobody speaks to them.</li>
+          </ul>
+        </div>
+        <div class="swot__q">
+          <p class="swot__k">Threats</p>
+          <ul>
+            <li>Allocators who screen on three years cannot be converted at any price this year.</li>
+            <li>The transparency advantage is copyable by a larger manager with a decade of history behind it.</li>
+            <li>An early drawdown materially worse than 2.63 per cent, in public, with no history to absorb it.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="actions" style="margin-top:clamp(34px,5vh,56px);">
+        <a class="btn btn--solid" href="allocate.html">Request a conversation</a>
+      </div>
+
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <span>Odysseon Holdings Limited</span>
+    <span>October 2026</span>
+  </footer>
+
+  <script src="whyus.js?v=1790040000"></script>
+  <script src="pill.js?v=1790040000"></script>
+  <script src="app.js?v=1790040000"></script>
+</body>
+</html>
